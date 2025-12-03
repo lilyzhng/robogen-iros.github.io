@@ -1,9 +1,9 @@
 (function () {
     //===== Preloader
 
-    window.onload = function () {
-        window.setTimeout(fadeout, 500);
-    }
+    document.addEventListener('DOMContentLoaded', function () {
+        window.setTimeout(fadeout, 300);
+    });
 
     function fadeout() {
         document.querySelector('.preloader').style.opacity = '0';
